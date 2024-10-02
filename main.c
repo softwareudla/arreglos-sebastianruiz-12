@@ -3,7 +3,7 @@
 
 int main() {
     float calificaciones[5][3];
-     char materias[3][20] = {"Física", "Química", "Matemáticas"};
+     char materias[3][20] = {"Fisica", "Quimica", "Matematicas"};
     char nombres[5][20];  
 
     for (int i = 0; i < 5; i++) {
@@ -17,7 +17,7 @@ int main() {
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 3; j++) {
             do {
-                printf("Ingrese la calificación de %s para %s (Las notas van de 0 a 10): ", nombres[i], materias[j]);
+                printf("Ingrese la calificacion de %s para %s (Las notas van de 0 a 10): ", nombres[i], materias[j]);
                 scanf("%f", &calificaciones[i][j]);
             } while (calificaciones[i][j] < 0 || calificaciones[i][j] > 10);
         }
@@ -50,7 +50,7 @@ int main() {
             if (calificaciones[i][j] > max) max = calificaciones[i][j];
             if (calificaciones[i][j] < min) min = calificaciones[i][j];
         }
-        printf("%s - Calificación más alta: %.2f, más baja: %.2f\n", nombres[i], max, min);
+        printf("%s - Calificacion mas alta: %.2f, mas baja: %.2f\n", nombres[i], max, min);
     }
 
 
