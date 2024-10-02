@@ -63,7 +63,7 @@ int main() {
                 reprobados++;
             }
         }
-        printf("%s ----- Aprobados: %d, Reprobados: %d\n", asignaturas[j], aprobados, reprobados);
+        printf("%s ----- Aprobados: %d, Reprobados: %d\n", materias[j], aprobados, reprobados);
     }
 
     return 0;
